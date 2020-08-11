@@ -1,7 +1,11 @@
 <?php
 namespace App\Http\Controllers;
+
 use App\Mahasiswa;
+use App\Prodi;
+use DataTables;
 use Illuminate\Http\Request;
+
 class MahasiswaController extends Controller
 {
     /**
@@ -13,17 +17,10 @@ class MahasiswaController extends Controller
    {
         return view('mahasiswa.index');
    }
-   
-   }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
    {
-      
-   }
+        }
     /**
      * Store a newly created resource in storage.
      *
@@ -32,47 +29,42 @@ class MahasiswaController extends Controller
      */
     public function store(Request $request)
    {
-        
-   }
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Mahasiswa $mahasiswa
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Mahasiswa $mahasiswa)
-   {
-        //
-   }
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Mahasiswa $mahasiswa
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Mahasiswa $mahasiswa, $id)
-   {
-        
-   }
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Mahasiswa $mahasiswa
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Mahasiswa $mahasiswa)
-   {
-        
-   }
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param \App\Mahasiswa $mahasiswa
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Mahasiswa $mahasiswa)
-   {
-       
-         }
-        
+        }
+   /**
+    * Display the specified resource.
+    *
+    * @param \App\Mahasiswa $mahasiswa
+    * @return \Illuminate\Http\Response
+    */
+   public function show(Mahasiswa $mahasiswa)
+  {
+       //
+  }
+   /**
+    * Show the form for editing the specified resource.
+    *
+    * @param \App\Mahasiswa $mahasiswa
+    * @return \Illuminate\Http\Response
+    */
+   public function edit(Mahasiswa $mahasiswa, $id)
+  {
+       }
+   /**
+    * Update the specified resource in storage.
+    *
+    * @param \Illuminate\Http\Request $request
+    * @param \App\Mahasiswa $mahasiswa
+    * @return \Illuminate\Http\Response
+    */
+   public function update(Request $request, Mahasiswa $mahasiswa)
+  {
+       }
+   /**
+    * Remove the specified resource from storage.
+    *
+    * @param \App\Mahasiswa $mahasiswa
+    * @return \Illuminate\Http\Response
+    */
+   public function destroy(Mahasiswa $mahasiswa)
+  {
+       } }
