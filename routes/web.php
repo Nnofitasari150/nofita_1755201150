@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 route::get('mhs','MahasiswaController@index');
+route::get('/mhs_list','MahasiswaController@mhs_list')->name('mhs_list');
 
 

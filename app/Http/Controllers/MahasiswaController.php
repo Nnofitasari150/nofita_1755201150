@@ -17,10 +17,19 @@ class MahasiswaController extends Controller
    {
         return view('mahasiswa.index');
    }
+   public function mhs_list()
+        {
+             return Datatables::of(Mahasiswa::all())
+             ->removeColumn('id')
+             ->addIndexColumn()
+             
+             ->make(true);
+        }
 
     public function create()
    {
         }
+        
     /**
      * Store a newly created resource in storage.
      *
